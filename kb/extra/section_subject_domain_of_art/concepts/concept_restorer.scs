@@ -1,0 +1,30 @@
+concept_restorer
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Реставратор] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Реставратор)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Реставратор — это специалист, занимающийся восстановлением произведений искусства и культурных объектов, возвращая их в первоначальный вид или предотвращая дальнейшее разрушение.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_artwork;
+         concept_cultural_heritage_object
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_restorer;
+   concept_cultural_conservator;;

@@ -1,0 +1,14 @@
+leonardo_da_vinci
+<- concept_artist;
+=> nrel_main_idtf: 
+   [Леонардо да Винчи] (*<- lang_ru;;*);
+=> nrel_style:
+   renaissance (*<- concept_style;;*);;
+
+
+pablo_picasso
+<- concept_artist;
+=> nrel_main_idtf: 
+   [Пабло Пикассо] (*<- lang_ru;;*);
+=> nrel_style:
+   cubism (*<- concept_style;;*);;

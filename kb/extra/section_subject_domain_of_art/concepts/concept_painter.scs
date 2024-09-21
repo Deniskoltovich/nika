@@ -1,0 +1,32 @@
+concept_painter
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Художник] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Художник)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Художник — это человек, который создает произведения искусства, такие как картины, рисунки или скульптуры.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_artist;
+         concept_visual_art;
+         concept_style
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_visual_artist;
+   concept_sculptor;
+   concept_digital_artist;;

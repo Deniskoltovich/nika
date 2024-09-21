@@ -1,0 +1,43 @@
+nrel_creates_sculpture
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf:
+   [создаёт скульптуру]
+   (* <- lang_ru;; *);
+   
+=> nrel_first_domain: concept_sculptor;
+=> nrel_second_domain: concept_sculpture;
+=> nrel_definitional_domain:
+   ...
+   (*
+        <= nrel_combination: {
+            concept_sculptor;
+            concept_sculpture
+        };;
+   *);
+   
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+          [Опр. (создаёт скульптуру)]
+          (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+           ...
+           (*
+              -> rrel_example:
+               [создаёт скульптуру - бинарное отношение, связывающее скульптора и произведение скульптуры, которое он создал.]
+               (* <- lang_ru;; *);;
+           *);;
+      <= nrel_using_constants: {
+             concept_sculptor;
+             concept_sculpture
+        };;
+  *);;

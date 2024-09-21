@@ -1,0 +1,31 @@
+concept_award
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Награда] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Награда)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Награда — это знак признания достижения или заслуги, вручённый за выдающееся произведение искусства или вклад в культуру.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_cultural_award;
+         concept_artwork;
+         concept_artist
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_cultural_award;
+   concept_art_competition_award;;

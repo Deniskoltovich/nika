@@ -1,0 +1,21 @@
+concept_artwork
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+    [произведение искусства]
+    (* <- lang_ru;; *);
+=> nrel_note:
+    [Произведение искусства — это объект, созданный человеком в рамках художественной деятельности. Это могут быть картины, скульптуры, фотографии и другие формы визуального искусства.]
+    (* <- lang_ru;; *);
+<= nrel_inclusion:
+    concept_visual_art
+    (* => nrel_main_idtf:
+        [визуальное искусство]
+        (* <- lang_ru;; *);;
+    *);
+<= nrel_inclusion:
+    concept_exhibited_artwork
+    (* => nrel_main_idtf:
+        [выставляемое произведение искусства]
+        (* <- lang_ru;; *);;
+    *);;

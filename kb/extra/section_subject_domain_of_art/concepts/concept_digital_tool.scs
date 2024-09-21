@@ -1,0 +1,30 @@
+concept_digital_tool
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Цифровой инструмент] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Цифровой инструмент)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Цифровой инструмент — это программное или аппаратное средство, используемое цифровыми художниками для создания произведений искусства. Примеры включают графические планшеты, программы для редактирования изображений и 3D-моделирование.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_graphic_tablet;
+         concept_3d_modeling_software
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_graphic_tool;
+   concept_design_software;;

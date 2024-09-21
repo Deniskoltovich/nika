@@ -1,0 +1,30 @@
+concept_photography
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Фотография] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Фотография)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Фотография — это вид визуального искусства, созданного с помощью камеры путём записи изображения света или других электромагнитных волн.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_visual_art;
+         concept_photographer
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_documentary_photography;
+   concept_art_photography;;

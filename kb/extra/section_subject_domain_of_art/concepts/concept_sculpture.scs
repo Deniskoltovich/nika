@@ -1,0 +1,30 @@
+concept_sculpture
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Скульптура] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Скульптура)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Скульптура — это трёхмерное произведение искусства, созданное путём лепки, резьбы, литья или других методов.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_visual_art;
+         concept_sculptor
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_modern_sculpture;
+   concept_classical_sculpture;;

@@ -1,0 +1,31 @@
+concept_digital_artist
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Цифровой художник] (*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+         [Опр. (Цифровой художник)]
+         (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+         ...
+         (*
+            -> rrel_example:
+               [Цифровой художник — это человек, создающий произведения искусства с использованием цифровых инструментов и технологий, таких как графические планшеты, программы для редактирования изображений и 3D-моделирование.]
+               (* <- lang_ru;; *);;
+         *);;
+      <= nrel_using_constants: {
+         concept_artist;
+         concept_digital_art;
+         concept_visual_art
+      };;
+  *);
+
+<= nrel_inclusion:
+   concept_3d_artist;
+   concept_graphic_designer;;
